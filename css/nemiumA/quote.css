@@ -1,0 +1,25 @@
+.quote {
+	border-left: 4px solid var(--gray40);
+	padding-left: 20px;
+	margin: 40px 0;
+	font: var(--quote);
+	color: var(--gray30);
+}
+
+.quote p {
+	margin: 0;
+}
+
+.quote-author {
+	margin-top: 4px;
+	color: var(--gray20);
+}
+
+@media screen and (min-width: 902px) {
+	.quote {
+		margin: 32px 0;
+	}
+	.quote-author {
+		margin-top: 16px;
+	}
+}

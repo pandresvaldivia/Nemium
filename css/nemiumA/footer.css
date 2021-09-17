@@ -1,0 +1,28 @@
+.footer {
+	align-items: center;
+	background: #212429;
+	block-size: 174px;
+	color: var(--white);
+	display: flex;
+	justify-content: center;
+	margin-block-start: 40px;
+	min-inline-size: 305px;
+}
+
+.footer-copyright {
+	font: var(--headline2);
+	margin: 0 0 16px 0;
+}
+
+.footer-links {
+	display: flex;
+	gap: 19px;
+	justify-content: center;
+	padding: 3px;
+}
+
+@media screen and (min-width: 902px) {
+	.footer {
+		margin-block-start: 113px;
+	}
+}

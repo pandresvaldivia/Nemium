@@ -1,0 +1,13 @@
+.nav {
+	display: flex;
+	flex-direction: column;
+	gap: 104px;
+}
+.nav-title {
+	font: var(--small);
+	margin: 0 0 16px 0;
+}
+
+.variantsMenu {
+	margin: 0;
+}

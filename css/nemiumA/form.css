@@ -1,0 +1,76 @@
+.form input {
+	outline: none;
+}
+
+.formContent {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.formTitle {
+	color: var(--gray30);
+	font: var(--extraTitle);
+}
+
+.formInput,
+.formInput-submit {
+	block-size: 48px;
+	border: 1px solid var(--gray20);
+	border-radius: 90px;
+	box-sizing: border-box;
+	color: var(--gray30);
+	font: var(--normal);
+	inline-size: 100%;
+	margin-block-start: 16px;
+	padding: 0 16px;
+}
+
+.formSubmit {
+	background: var(--black);
+	block-size: 48px;
+	border: none;
+	border-radius: 90px;
+	color: var(--white);
+	font: var(--submit);
+	inline-size: 115.82px;
+}
+
+.formSubmit-composite {
+	inline-size: 100%;
+	margin-block-start: 16px;
+	position: relative;
+}
+
+.formSubmit-composite .formInput {
+	margin-block-start: 0;
+	padding-inline-end: 125px;
+}
+
+.formSubmit-composite .formSubmit {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+@media screen and (min-width: 902px) {
+	.formInput {
+		inline-size: 280px;
+		margin-inline-end: 16px;
+	}
+
+	.formSubmit-composite {
+		display: inline-block;
+		inline-size: 337px;
+	}
+
+	.formSubmit {
+		inline-size: 119px;
+	}
+
+	.formSubmit-composite .formInput {
+		inline-size: 337px;
+		margin-block-start: 0;
+		padding-inline-end: 129px;
+	}
+}

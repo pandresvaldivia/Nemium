@@ -1,0 +1,17 @@
+.hero {
+	background-image: linear-gradient(
+			to top,
+			rgba(255, 255, 255, 0.3),
+			transparent
+		),
+		url('../../images/patron.webp');
+	background-size: 100px;
+	block-size: 96px;
+	min-inline-size: 305px;
+}
+
+@media screen and (min-width: 902px) {
+	.hero {
+		block-size: 350px;
+	}
+}

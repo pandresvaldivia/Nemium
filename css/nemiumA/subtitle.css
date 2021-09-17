@@ -1,0 +1,29 @@
+[class^='subtitle'] {
+	font: var(--headline3);
+	margin: 0;
+	position: relative;
+}
+
+.subtitle-underlined {
+	margin-block-start: 16px;
+	padding-block-end: 8px;
+}
+
+.subtitle-underlined::after {
+	background: var(--gray30);
+	block-size: 4px;
+	bottom: 0;
+	content: '';
+	display: block;
+	inline-size: 80px;
+	position: absolute;
+}
+
+.section-number {
+	counter-reset: item;
+}
+
+.subtitle-underlined::before {
+	content: counter(item) '. ';
+	counter-increment: item;
+}

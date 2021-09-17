@@ -1,0 +1,33 @@
+.summary {
+	display: none;
+}
+
+.summary-title {
+	color: var(--gray20);
+	font: var(--smallBold);
+	text-decoration: none;
+}
+
+.summary-content {
+	counter-reset: index;
+	margin: 12px 0;
+}
+
+.summary-links a {
+	color: var(--gray20);
+	display: block;
+	font: var(--small);
+	margin-block-start: 16px;
+	text-decoration: none;
+}
+
+.summary-links a::before {
+	content: counter(index) '. ';
+	counter-increment: index;
+}
+
+@media screen and (min-width: 600px) {
+	.summary {
+		display: block;
+	}
+}
