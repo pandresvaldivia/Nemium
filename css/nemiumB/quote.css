@@ -1,0 +1,23 @@
+.quote {
+	background: var(--gray20);
+	border-radius: 8px;
+	color: var(--white);
+	font: var(--quote);
+	margin: 40px 0;
+	padding: 24px;
+}
+
+.quote p {
+	margin: 0;
+}
+
+.quote .quote-author {
+	margin-block-start: 16px;
+}
+
+@media screen and (min-width: 902px) {
+	.quote {
+		font-weight: 400;
+		margin: 32px 0;
+	}
+}

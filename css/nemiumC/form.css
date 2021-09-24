@@ -9,8 +9,8 @@
 }
 
 .formTitle {
-	color: var(--gray30);
 	font: var(--extraTitle);
+	font-size: 20px;
 }
 
 .formInput,

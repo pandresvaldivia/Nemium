@@ -1,0 +1,13 @@
+[class^='variantBtn'] {
+	border-radius: 4px;
+	color: var(--gray10);
+	display: block;
+	font: var(--medium);
+	padding: 8px;
+	text-decoration: none;
+}
+
+.variantBtn-selected {
+	background: var(--black);
+	color: var(--white);
+}

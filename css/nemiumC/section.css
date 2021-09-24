@@ -1,0 +1,18 @@
+.section-content {
+	margin-top: 24px;
+}
+
+.section-image {
+	inline-size: 100%;
+	height: auto;
+}
+
+@media screen and (min-width: 902px) {
+	.section-content {
+		margin-top: 40px;
+	}
+
+	.section {
+		margin-top: 162px;
+	}
+}

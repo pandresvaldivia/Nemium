@@ -1,0 +1,16 @@
+.wrapper {
+	margin: 0 auto;
+	box-sizing: border-box;
+	max-inline-size: 966px;
+	min-inline-size: 305px;
+	padding-inline-end: 16px;
+	padding-inline-start: 16px;
+}
+
+@media screen and (min-width: 902px) {
+	.wrapper {
+		padding-block-start: 80px;
+		padding-inline-end: 0;
+		padding-inline-start: 0;
+	}
+}

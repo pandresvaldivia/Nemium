@@ -1,0 +1,24 @@
+.nav {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+.nav-title {
+	font: var(--small);
+	margin: 0 0 16px 0;
+}
+
+.variantsMenu {
+	margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+	.nav {
+		inline-size: 280px;
+		gap: 104px;
+	}
+
+	.variantsMenu {
+		inline-size: 176px;
+	}
+}

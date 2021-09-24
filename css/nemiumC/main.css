@@ -1,13 +1,14 @@
 :root {
 	--white: #ffffff;
-	--gray10: #808080;
+	--gray: #e5e5e5;
+	--gray10: #c4c4c4c4;
 	--gray20: #616161;
 	--gray30: #424242;
 	--gray40: #212121;
 	--gray50: #212429;
 	--black: #000000;
 	--fontBase: Roboto, sans-serif;
-	--headline1: 400 1.5rem/1.7581rem var(--fontBase);
+	--headline1: 400 2rem/2.3438rem var(--fontBase);
 	--headline2: 400 1.5rem/1.7581rem var(--fontBase);
 	--headline3: 400 1.25rem/1.465rem var(--fontBase);
 	--small: 400 0.875rem/1.5rem var(--fontBase);
@@ -15,7 +16,7 @@
 	--normal: 400 1rem/1.5rem var(--fontBase);
 	--medium: 500 0.875rem/1.5rem var(--fontBase);
 	--submit: 500 1rem/1.5rem var(--fontBase);
-	--outstand: italic 700 1rem/1.5rem var(--fontBase);
+	--outstand: 700 1rem/1.5rem var(--fontBase);
 	--quote: 400 1rem/2rem var(--fontBase);
 	--extraTitle: 400 1.5rem/1.7581rem var(--fontBase);
 }
@@ -25,7 +26,8 @@ html {
 }
 
 .body {
-	font-family: var(--fontBase);
+	color: var(--gray30);
+	font: var(--normal);
 	margin: 0;
 }
 
@@ -37,21 +39,32 @@ html {
 	margin-block-start: 40px;
 }
 
-.main {
-	max-inline-size: 902px;
+.headline2 {
+	font: var(--headline2);
+}
+
+.introduction {
+	color: var(--gray40);
+	margin-block-end: 40px;
 }
 
 .separator {
 	border-color: rgba(97, 97, 97, 0.2);
-	margin: 40px 0;
+	margin-block-end: 40px;
+	margin-block-start: 40px;
 }
 
 .code {
-	background: #fec62e;
+	background: var(--gray);
+	border-radius: 8px;
 	font: var(--normal);
-	padding: 40px;
+	padding: 16px;
 	white-space: pre-wrap;
 	word-wrap: break-word;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
 }
 
 .outstandText {
@@ -72,8 +85,8 @@ html {
 	:root {
 		--headline1: 400 3.75rem/4.3944rem var(--fontBase);
 		--headline2: 400 2rem/2.3438rem var(--fontBase);
-		--quote: 400 1.5rem/2rem var(--fontBase);
 		--headline3: 400 1.5rem/1.7581rem var(--fontBase);
+		--quote: 400 1.5rem/2rem var(--fontBase);
 	}
 
 	.headline1 {
@@ -88,5 +101,14 @@ html {
 	.tech-icon {
 		block-size: 80px;
 		inline-size: 80px;
+	}
+
+	.separator {
+		margin-block-end: 64px;
+		margin-block-start: 64px;
+	}
+
+	.code {
+		padding: 40px;
 	}
 }

@@ -1,0 +1,11 @@
+.list {
+	padding: 0 16px;
+}
+
+.list > li {
+	margin-block-end: 16px;
+}
+
+.list > li::marker {
+	color: var(--white);
+}

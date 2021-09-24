@@ -3,7 +3,6 @@
 	padding-inline-start: 20px;
 	margin: 40px 0;
 	font: var(--quote);
-	color: var(--gray30);
 }
 
 .quote p {
@@ -17,7 +16,8 @@
 
 @media screen and (min-width: 902px) {
 	.quote {
-		margin: 32px 0;
+		margin-block-end: 80px;
+		margin-block-start: 80px;
 	}
 	.quote .quote-author {
 		margin-block-start: 16px;

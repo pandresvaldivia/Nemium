@@ -1,0 +1,34 @@
+.summary-title {
+	color: var(--gray20);
+	font: var(--smallBold);
+	text-decoration: none;
+}
+
+.summary-content {
+	border-left: 4px solid var(--gray10);
+	padding-inline-start: 16px;
+}
+
+.summary-section {
+	counter-reset: index;
+	margin-block-start: 24px;
+}
+
+.summary-links a {
+	color: var(--gray20);
+	display: block;
+	font: var(--small);
+	margin-block-start: 16px;
+	text-decoration: none;
+}
+
+.summary-links a::before {
+	content: counter(index) '. ';
+	counter-increment: index;
+}
+
+@media screen and (min-width: 600px) {
+	.summary {
+		display: block;
+	}
+}
