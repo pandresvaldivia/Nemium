@@ -1,12 +1,14 @@
-.summary {
-	display: none;
-}
-
 .summary-title {
-	color: var(--white);
+	color: var(--black);
 	cursor: pointer;
 	font: var(--smallBold);
+	margin-block-end: 16px;
+	opacity: 0.5;
 	text-decoration: none;
+}
+
+.summary-content[open] .summary-title {
+	opacity: 1;
 }
 
 .summary-content {
@@ -14,22 +16,25 @@
 	margin: 12px 0;
 }
 
-.summary-content summary::marker {
-	color: var(--white);
-}
-
 .summary-links a {
-	color: var(--gray10);
+	color: var(--black);
 	display: block;
 	font: var(--small);
 	margin-block-start: 16px;
-	padding-inline-start: 16px;
+	margin-block-start: 16px;
+	padding-inline-start: 8px;
 	text-decoration: none;
 }
 
 .summary-links a::before {
 	content: counter(index) '. ';
 	counter-increment: index;
+}
+
+a.summaryLink-selected {
+	background: #5551ff;
+	color: var(--white);
+	padding: 8px;
 }
 
 @media screen and (min-width: 600px) {

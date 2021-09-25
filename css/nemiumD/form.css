@@ -6,17 +6,18 @@
 	border: none;
 	margin: 0;
 	padding: 0;
+	text-align: left;
 }
 
 .formTitle {
+	color: var(--black);
 	font: var(--extraTitle);
-	font-size: 20px;
 }
 
 .formInput,
 .formInput-submit {
 	block-size: 48px;
-	border: 1px solid var(--gray20);
+	border: 1px solid var(--black);
 	border-radius: 90px;
 	box-sizing: border-box;
 	color: var(--gray30);
@@ -27,11 +28,11 @@
 }
 
 [class^='formInput']::-webkit-input-placeholder {
-	color: var(--gray30);
+	color: var(--black);
 }
 
 .formSubmit {
-	background: var(--black);
+	background: var(--purple);
 	block-size: 48px;
 	border: none;
 	border-radius: 90px;

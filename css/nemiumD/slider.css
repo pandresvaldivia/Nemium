@@ -1,0 +1,54 @@
+.slider-title {
+	font: var(--extraTitle);
+	color: var(--black);
+	margin-block-start: 24px;
+	margin-block-end: 16px;
+}
+
+.slider-container {
+	inline-size: 100%;
+	overflow: auto;
+	overflow-x: hidden;
+	white-space: nowrap;
+	font-size: 0;
+	scroll-behavior: smooth;
+}
+
+.slider-slide {
+	display: inline;
+	inline-size: 100%;
+	aspect-ratio: 16/9;
+}
+
+.slider-image {
+	inline-size: 100%;
+	block-size: auto;
+}
+
+.slider-bulletList {
+	margin-block-start: 16px;
+	text-align: center;
+}
+
+[class^='sliderBullet'] {
+	background: var(--violet);
+	block-size: 30px;
+	border-radius: 50%;
+	display: inline-block;
+	inline-size: 30px;
+	margin: 0 8px;
+	opacity: 0.5;
+}
+
+.sliderBullet-selected {
+	background: var(--purple);
+	opacity: 1;
+}
+
+@media screen and (min-width: 600px) {
+	[class^='sliderBullet'] {
+		block-size: 16px;
+		inline-size: 16px;
+		margin: 0 4px;
+	}
+}

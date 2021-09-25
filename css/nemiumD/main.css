@@ -1,0 +1,106 @@
+:root {
+	--white: #ffffff;
+	--gray10: #616161;
+	--gray20: #545454;
+	--gray30: #424242;
+	--black: #000000;
+	--purple: #5551ff;
+	--violet: #8e2de2;
+	--fontBase: 'Rubik', sans-serif;
+	--fontAux: 'Roboto', sans-serif;
+	--headline1: 700 1.75rem/2.0737rem var(--fontBase);
+	--headline2: 400 2rem/2.37rem var(--fontBase);
+	--headline3: 400 1.375rem/1.6294rem var(--fontBase);
+	--small: 400 0.875rem/1.5rem var(--fontBase);
+	--smallBold: 700 0.875rem/1.5rem var(--fontBase);
+	--normal: 400 1rem/1.5rem var(--fontBase);
+	--medium: 500 0.875rem/1.5rem var(--fontAux);
+	--submit: 500 1rem/1.5rem var(--fontBase);
+	--quote: 400 1rem/2rem var(--fontBase);
+	--extraTitle: 400 1.5rem/1.7775rem var(--fontBase);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.body {
+	color: var(--gray20);
+	font: var(--normal);
+	margin: 0;
+}
+
+.headline1,
+.headline2 {
+	font: var(--headline1);
+	color: var(--black);
+	margin-block-end: 16px;
+	margin-block-start: 40px;
+}
+
+.headline2 {
+	font: var(--headline2);
+}
+
+.main {
+	max-inline-size: 903px;
+	text-align: center;
+}
+
+.separator {
+	border-color: rgba(97, 97, 97, 0.2);
+	margin-block-end: 40px;
+	margin-block-start: 40px;
+}
+
+.code {
+	/* background: #fec62e; */
+	border: 8px solid #5551ff;
+	box-shadow: -10px 10px 0px #abaaf6;
+	border-radius: 8px;
+	color: var(--black);
+	font: var(--normal);
+	padding: 32px;
+	text-align: left;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+.outstandText {
+	color: var(--purple);
+}
+
+.moreInfo {
+	color: var(--gray20);
+	font: var(--normal);
+	margin: 40px 0;
+	text-align: left;
+}
+
+.moreInfo a {
+	color: var(--gray20);
+}
+
+@media screen and (min-width: 902px) {
+	:root {
+		--headline1: 700 3.75rem/4.4375rem var(--fontBase);
+		--headline2: 400 2rem/2.3438rem var(--fontBase);
+		--headline3: 400 1.5rem/1.7581rem var(--fontBase);
+		--quote: 400 1.5rem/2rem var(--fontBase);
+		--extraTitle: 400 2rem/2.37rem var(--fontBase);
+	}
+
+	.headline1 {
+		margin-block-end: 16px;
+		margin-block-start: 0;
+	}
+
+	.headline2 {
+		font: var(--headline2);
+	}
+
+	.separator {
+		margin-block-end: 64px;
+		margin-block-start: 64px;
+	}
+}

@@ -1,5 +1,6 @@
 .summary-title {
 	color: var(--gray20);
+	cursor: pointer;
 	font: var(--smallBold);
 	text-decoration: none;
 }

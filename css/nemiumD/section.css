@@ -1,0 +1,30 @@
+.section {
+	text-align: left;
+}
+
+.section .headline2 {
+	font: var(--extraTitle);
+}
+
+.section-content {
+	margin-top: 40px;
+}
+
+.section-image {
+	inline-size: 100%;
+	height: auto;
+}
+
+@media screen and (min-width: 902px) {
+	.section-content {
+		margin-top: 40px;
+	}
+
+	.section {
+		margin-top: 156px;
+	}
+
+	.section .headline2 {
+		font: var(--extraTitle);
+	}
+}

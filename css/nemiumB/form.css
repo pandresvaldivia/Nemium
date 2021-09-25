@@ -38,6 +38,7 @@
 	border: none;
 	border-radius: 8px;
 	color: var(--white);
+	cursor: pointer;
 	font: var(--submit);
 	inline-size: 100%;
 	margin-block-start: 16px;

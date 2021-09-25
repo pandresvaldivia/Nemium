@@ -1,0 +1,30 @@
+.quote {
+	border-left: 4px solid var(--purple);
+	color: var(--black);
+	font: var(--quote);
+	margin: 0;
+	margin-block-end: 40px;
+	margin-block-start: 40px;
+	padding-inline-start: 20px;
+	text-align: left;
+}
+
+.quote p {
+	margin: 0;
+}
+
+.quote .quote-author {
+	margin-block-start: 4px;
+}
+
+@media screen and (min-width: 902px) {
+	.quote {
+		margin: 0 auto;
+		margin-block-end: 64px;
+		margin-block-start: 64px;
+		max-inline-size: 633px;
+	}
+	.quote .quote-author {
+		margin-block-start: 16px;
+	}
+}
