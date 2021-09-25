@@ -1,0 +1,27 @@
+.quote {
+	background: var(--coral20);
+	border-radius: 8px;
+	color: var(--purple20);
+	font: var(--quote);
+	margin: 0;
+	margin-block-end: 40px;
+	margin-block-start: 40px;
+	padding: 16px;
+}
+
+.quote p {
+	margin: 0;
+}
+
+.quote .quote-author {
+	margin-block-start: 16px;
+}
+
+@media screen and (min-width: 902px) {
+	.quote {
+		font-weight: 400;
+		margin-block-end: 32px;
+		margin-block-start: 58px;
+		padding: 24px;
+	}
+}

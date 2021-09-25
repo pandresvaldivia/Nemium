@@ -1,9 +1,9 @@
-[class^='section'] {
-	color: var(--gray10);
+.section .subtitle {
+	font-weight: 400;
 }
 
 .section-content {
-	margin-block-start: 24px;
+	margin-block-start: 40px;
 }
 
 .section-image {
@@ -17,10 +17,10 @@
 	}
 
 	.section {
-		margin-block-start: 123px;
+		margin-block-start: 80px;
 	}
 
-	.section .headline2 {
-		font: var(--headline3);
+	.section .headline3 {
+		font: 600 32px/39px var(--fontBase);
 	}
 }

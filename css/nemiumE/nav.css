@@ -1,0 +1,35 @@
+.nav {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.nav-title {
+	color: var(--white);
+	font: var(--smallBold);
+	margin-block-end: 16px;
+}
+
+.nav-section {
+	inline-size: 176px;
+	margin: 0 auto;
+}
+
+.nav-section .nav-title {
+	font-family: var(--fontAux);
+	font-weight: 400;
+}
+
+.variantsMenu {
+	margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+	.nav {
+		gap: 104px;
+	}
+
+	.nav-section {
+		margin: 0;
+	}
+}

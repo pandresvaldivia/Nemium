@@ -1,0 +1,16 @@
+.wrapper {
+	box-sizing: border-box;
+	min-inline-size: 305px;
+	padding-block-start: 24px;
+	padding-inline-end: 16px;
+	padding-inline-start: 16px;
+}
+
+@media screen and (min-width: 600px) {
+	.wrapper {
+		display: flex;
+		gap: 84px;
+		justify-content: center;
+		padding-block-start: 86px;
+	}
+}
